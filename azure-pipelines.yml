@@ -1,7 +1,7 @@
 stages: 
   - stage: continuous integration
     jobs: 
-    - jobs: dotnet build
+    - job: dotnet build
       display name: dotnet
       steps:
       - script: dotnet restore  
