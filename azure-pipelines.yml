@@ -4,13 +4,9 @@ stages:
     - job: dotnet build
       
       steps:
-        
-      - script: dotnet restore  
-        
-      - script: dotnet build
-        
-      - script: dotnet test
-       
+      - script: dotnet restore          
+      - script: dotnet build       
+      - script: dotnet test      
       - script: dotnet publish
         
          
