@@ -1,13 +1,13 @@
+#creating build pipeline for dotnet app
 stages: 
-  - stage: continuous_integration
-    jobs: 
-    - job: dotnet build
-      
-      steps:
-      - script: dotnet restore          
-      - script: dotnet build       
-      - script: dotnet test      
-      - script: dotnet publish
-        
+   - stage: continuousintegration
+     jobs: 
+     - job: dotnetbuild
+       steps:
+       - script: dotnet restore
+       - script: dotnet build
+       - script: dotnet test
+       - script: dotnet publish
          
-      
+
+        
