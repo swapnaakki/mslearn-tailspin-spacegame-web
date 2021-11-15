@@ -1,9 +1,10 @@
 stages: 
-  - stage: continuous integration
+  - stage: continuous-integration
     jobs: 
     - job: dotnet build
       
       steps:
+        
       - script: dotnet restore  
         
       - script: dotnet build
