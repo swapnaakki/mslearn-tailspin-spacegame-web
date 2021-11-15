@@ -1,5 +1,5 @@
 stages: 
-  - stage: continuous integration
+  - stage: continuous-integration
     jobs: 
     - job: dotnet build
       
