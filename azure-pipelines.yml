@@ -2,15 +2,15 @@ stages:
   - stage: continuous integration
     jobs: 
     - job: dotnet build
-      display name: dotnet
+      displayname: dotnet
       steps:
       - script: dotnet restore  
-        display name: restore
+        displayname: restore
       - script: dotnet build
-        display name: build
+        displayname: build
       - script: dotnet test
-        display name: test
+        displayname: test
       - script: dotnet publish
-        display name: publish artifact
+        displayname: publish artifact
          
       
